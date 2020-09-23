@@ -4,4 +4,6 @@ The vba script will showcase the ticker,yearly change, percent change and stock 
 this excel vba also highlights the positive and negative changes to the yearly change column
 the screenshot shows the year 2014's stock data
 
+Lastly, the excel vba sheet file size was reduced, due to file size issues.
+
 
