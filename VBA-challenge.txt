@@ -1,0 +1,65 @@
+Sub my_ticker()
+'First we will add the headers to the worksheet
+    Cells(1, 9).Value = "Ticker"     'ticker header
+    Cells(1, 10).Value = "Yearly Change"   'yearlychange header
+    Cells(1, 11).Value = "Percent Change"   'percentchange header
+    Cells(1, 12).Value = "Total Stock Volume"    'stockvolume header
+    
+    'now we can declare variables we are going to use
+      Dim ticker As String
+    ' Dim stock_volume As Double
+     Dim volume_amount As Double
+    Dim Table_Row As Integer
+    Table_Row = 2
+    
+  
+ 'here we will utilize a loop for ticker
+   Row_end = Cells(Rows.Count, 1).End(xlUp).Row
+   For x = 2 To Row_end
+         If Cells(x + 1, 1).Value <> Cells(x, 1).Value Then
+                      ticker = Cells(x, 1).Value
+                      Range("I" & Table_Row).Value = ticker
+                     
+                     open_column = Cells(x, 3).Value
+                    close_column = Cells(x, 6).Value
+       'here we use yearly change formula
+       yearly_change = (close_column - open_column)
+        Range("J" & Table_Row).Value = yearly_change
+        
+        'Percent Change
+        'So now we use a formula for percent change is (new value-old value)/ (old value) so in this case it will be
+          percent_change = (close_column - open_column) / (close_column)
+          Range("K" & Table_Row).Value = percent_change
+   
+'Now we look at total stock volume
+                 volume_amount = Cells(x, 7).Value
+                 Range("L" & Table_Row).Value = volume_amount
+                Table_Row = Table_Row + 1
+                 ' resetting
+                volume_amount = 0
+Else
+ volume_amount = volume_amount + Cells(x, 7).Value
+
+End If
+
+
+'to highlight column j using conditional formatting
+
+                 Dim y As Range: Set y = Range("J2", Range("J2").End(xlDown))
+                 Dim z_color As Range
+                 
+For Each z_color In y
+                If z_color.Interior.ColorIndex < 0 Then
+                Range("J2", Range("J" & Rows.Count).End(xlDown)).Interior.Color = vbRed
+    Else
+           If z_color.Interior.ColorIndex >= 0 Then
+            Range("J2", Range("J" & Rows.Count).End(xlDown)).Interior.Color = vbGreen
+                
+   End If
+End If
+
+Next
+
+        'Next-conditional formatting For Next
+
+End Sub
