@@ -10,7 +10,7 @@ The vba script will showcase the ticker,yearly change, percent change and stock 
 * Conditional formatting is used to try to highlight the positive and negative changes to the yearly change column. The green represents positive changes.
 * -the screenshot shows the year 2014's stock data
 * -Lastly, the excel vba sheet file size was reduced, due to file size issues.
-# Now repeat the steps for Year 2015 and Year 2015 sheets
+# Now repeat the steps for Year 2015 and Year 2016 sheets
 
 
 
