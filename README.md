@@ -13,7 +13,7 @@
 * -the screenshot shows the year 2014's , 2015's and 2016's stock data
 * -Lastly, the excel vba sheet file size was reduced, due to file size issues. Repeat the steps for Year 2015 and Year 2016 sheets.
 
-![Example]https://github.com/sherinmatt/blob/Vba_Challenge/master/Images/Year_2016.png)
+![Example] (https://github.com/sherinmatt/blob/Vba_Challenge/master/Images/Year_2016.png)
 
 # Inspiration
 Rutgers Bootcamp Course
