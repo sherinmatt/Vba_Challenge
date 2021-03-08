@@ -1,5 +1,5 @@
 # Vba_Challenge
-## Main Objectives:
+ ## Main Objectives:
   * * In this challenge, utilized the Stock Data file to analyze the stocks and output the following : 
   * * The ticker symbol.
   * * Yearly change from opening price at the beginning of a given year to the closing price at the end of that year.
