@@ -1,5 +1,5 @@
 # Vba_Challenge
-## -
+
   ## Main Objectives:
     * In this challenge, utilized the Stock Data file to analyze the stocks and output the following : 
     * * The ticker symbol.
