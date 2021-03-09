@@ -8,7 +8,7 @@
     * * The total stock volume of the stock. The vba script will showcase the ticker,yearly change, percent change and stock volume 
 
  ## Technologies used:
-    * Excel
+    * Microsoft Excel
     * VBA Script
  
   ## Steps, taken :
