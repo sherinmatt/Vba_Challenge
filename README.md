@@ -16,7 +16,7 @@
     * Create a new module in Excel VBA. So, we first add the necessary variables and headers to the worksheet
     * Next, a for loop was created to build the ticker (if statements are included)
     * Later on the percent change, yearly change formulas are used to figure out the stock fluctuations between the beginning and the end of the year.
-    * The screenshots in the folder from the main branch, shows results from the year 2014, 2015 and 2016.
+    * The screenshots in the images folder, show results from the year 2014, 2015 and 2016.
     * Lastly, the excel vba sheet file size was reduced, due to file size issues. Repeat the steps for Year 2015 and Year 2016 sheets.
 
 
